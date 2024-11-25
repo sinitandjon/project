@@ -4,7 +4,8 @@ The scraped content is then processed using the pre-trained **SentenceTransforme
 which converts the text into high-dimensional embeddings—numerical vectors representing the semantic meaning of the content. 
 These embeddings are stored in a vector database powered by **FAISS (Facebook AI Similarity Search)**, optimized for fast and efficient similarity searches. 
 When a user submits a search query, the system uses the same SentenceTransformer model to generate an embedding
-for the query and performs a similarity search in FAISS to find the top five nearest neighbors—articles or content pieces most semantically similar to the query. The system then returns these results to the user
+for the query and performs a similarity search in FAISS to find the top five nearest neighbors—articles or content pieces most semantically similar to the query.
+The system then returns these results to the user
 , offering an accurate and responsive search experience tailored to the data from the target websites.
 
 Requirements:
