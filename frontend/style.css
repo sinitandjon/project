@@ -1,0 +1,16 @@
+.result {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.title {
+    width: 50%;
+    display: block;
+    text-overflow: ellipsis; /* Optional: to handle overflow text */
+    white-space: nowrap;     /* Optional: prevent text wrapping */
+    overflow: hidden;       /* Optional: hide overflowing text */
+}
+
+img {
+    width: 50%;             
+}
