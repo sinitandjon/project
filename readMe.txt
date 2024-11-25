@@ -1,3 +1,5 @@
+The project is a search engine designed to extract and index relevant content from the public websites **public.fr** and **vsd.fr**, leveraging cutting-edge machine learning techniques. First, a web scraping process gathers articles and textual data from these websites. The scraped content is then processed using the pre-trained **SentenceTransformer('all-MiniLM-L6-v2')** model, which converts the text into high-dimensional embeddings—numerical vectors representing the semantic meaning of the content. These embeddings are stored in a vector database powered by **FAISS (Facebook AI Similarity Search)**, optimized for fast and efficient similarity searches. When a user submits a search query, the system uses the same SentenceTransformer model to generate an embedding for the query and performs a similarity search in FAISS to find the top five nearest neighbors—articles or content pieces most semantically similar to the query. The system then returns these results to the user, offering an accurate and responsive search experience tailored to the data from the target websites.
+
 Requirements:
 
     Python 3.x (https://www.python.org/downloads/)
